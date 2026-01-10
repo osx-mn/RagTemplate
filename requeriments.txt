@@ -1,0 +1,11 @@
+sentence-transformers
+langchain-text-splitters
+langchain-huggingface
+langchain_community
+langchain_ollama
+langchain-qdrant
+langchain
+qdrant-client
+pypdf
+tinydb
+tomli

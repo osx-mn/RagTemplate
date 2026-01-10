@@ -1,0 +1,25 @@
+# Entornos virtuales
+rag_template/
+venv/
+env/
+.venv/
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuración local y secretos (NO compartir)
+config.toml
+*.env
+
+# Archivos de la aplicación (Datos/Estado local)
+qdrant_db/
+input_docs/
+documents_process.json
+
+# IDEs y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
