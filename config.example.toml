@@ -1,7 +1,12 @@
 [models]
 embedding_model = ""
+llm_model= ""
 
 [paths]
 documents_folder = ""
 qdrant_client_path = ""
 qdrant_collection_name = ""
+
+[struct_prompts]
+cordial= """
+"""

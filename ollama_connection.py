@@ -1,9 +1,9 @@
 from langchain_ollama import ChatOllama
 
-def chat(ask):
+def chat(ask, model_name):
     #Configurar el modelo
     llm = ChatOllama(
-        model="gemma3:4b",
+        model=model_name,
         temperature=0
     )
 
