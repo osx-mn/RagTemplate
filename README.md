@@ -17,6 +17,10 @@ Proyecto base para implementar sistemas RAG modulares
 poetry install
 ```
 
+#### Configuración
+
+Cambia el nombre del archivo `config.example.toml` a `config.toml` y modifica los parámetros.
+
 #### Ejecutar el proyecto
 
 ```bash
