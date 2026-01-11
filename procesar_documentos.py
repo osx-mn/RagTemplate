@@ -1,5 +1,16 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+import tomllib  
+
+#===== CONFIGURACIONES =====#
+
+with open("config.toml", "rb") as f:
+    config = tomllib.load(f)
+
+CHUNK_SIZE= config["chunks"]["chunk_size"]
+CHUNK_OVERLAP= config["chunks"]["chunk_overlap"]
+
+#===== FUNCIONES =====#
 
 def _procesar_pdf(documents_folder, file_name):
     loader = PyPDFLoader(f"{documents_folder}/{file_name}")
@@ -19,8 +30,8 @@ def procesar_pdf(documents_folder, file_name, strict_type=None):
 
 def divir_documento_en_chunks(document, file_name):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
         length_function=len,
         is_separator_regex=True,
     )   

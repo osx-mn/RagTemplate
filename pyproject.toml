@@ -1,0 +1,21 @@
+[tool.poetry]
+package-mode = false
+
+[project]
+name = "ragtemplate"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "osxkar", email = "133513764+osx-mn@users.noreply.github.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = ["tinydb (>=4.8.2,<5.0.0)", "sentence-transformers (>=5.2.0,<6.0.0)", "langchain-text-splitters (>=1.1.0,<2.0.0)", "langchain-huggingface (>=1.2.0,<2.0.0)", "langchain-community (>=0.4.1,<0.5.0)", "langchain-ollama (>=1.0.1,<2.0.0)", "langchain-qdrant (>=1.1.0,<2.0.0)", "langchain (>=1.2.3,<2.0.0)", "qdrant-client (>=1.16.2,<2.0.0)", "pypdf (>=6.6.0,<7.0.0)", "tomli (>=2.4.0,<3.0.0)"]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = ["requests (>=2.32.5,<3.0.0)"]

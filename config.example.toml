@@ -1,6 +1,14 @@
 [models]
 embedding_model = ""
-llm_model= ""
+llm_model = ""
+
+# Cambiar los valores de los chunks de la base de datos vectorial
+# puede afectar el comportamiento de la misma. Se recomienda cambiar
+# estos valores para pruebas y no directamente en producción.
+# NOTA: Al cambiar estos valores, es necesario regenerar la base de datos.
+[chunks]
+chunk_size = 1000
+chunk_overlap = 200
 
 [paths]
 documents_folder = ""
@@ -8,5 +16,5 @@ qdrant_client_path = ""
 qdrant_collection_name = ""
 
 [struct_prompts]
-cordial= """
+cordial = """
 """
